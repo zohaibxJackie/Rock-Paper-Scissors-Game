@@ -1,0 +1,5 @@
+@import url('https://fonts.google.com/specimen/Barlow+Semi+Condensed');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
