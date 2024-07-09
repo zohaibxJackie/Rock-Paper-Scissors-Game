@@ -32,6 +32,9 @@ export default {
       fontFamily: {
         barlowSemiCondensed: ['"Barlow Semi Condensed"', 'sans-serif'],
       },
+      borderImage: {
+        'gradient-rock': 'linear-gradient(90deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%))'
+      },
       gradientColorStops: theme => ({
         ...theme('colors'),
         'scissors-gradient': ['hsl(39, 89%, 49%)', 'hsl(40, 84%, 53%)'],
@@ -39,6 +42,7 @@ export default {
         'rock-gradient': ['hsl(349, 71%, 52%)', 'hsl(349, 70%, 56%)'],
         'background-radial': ['hsl(214, 47%, 23%)', 'hsl(237, 49%, 15%)'],
       }),
+      
     },
   },
   plugins: [],
