@@ -14,10 +14,6 @@ export default {
           paperGradientEnd: 'hsl(230, 89%, 65%)',
           rockGradientStart: 'hsl(349, 71%, 52%)',
           rockGradientEnd: 'hsl(349, 70%, 56%)',
-          lizardGradientStart: 'hsl(261, 73%, 60%)',
-          lizardGradientEnd: 'hsl(261, 72%, 63%)',
-          cyanGradientStart: 'hsl(189, 59%, 53%)',
-          cyanGradientEnd: 'hsl(189, 58%, 57%)',
         },
         neutral: {
           darkText: 'hsl(229, 25%, 31%)',
@@ -31,19 +27,28 @@ export default {
       },
       fontFamily: {
         barlowSemiCondensed: ['"Barlow Semi Condensed"', 'sans-serif'],
-      },
-      borderImage: {
-        'gradient-rock': 'linear-gradient(90deg, hsl(349, 71%, 52%), hsl(349, 70%, 56%))'
-      },
-      gradientColorStops: theme => ({
-        ...theme('colors'),
-        'scissors-gradient': ['hsl(39, 89%, 49%)', 'hsl(40, 84%, 53%)'],
-        'paper-gradient': ['hsl(230, 89%, 62%)', 'hsl(230, 89%, 65%)'],
-        'rock-gradient': ['hsl(349, 71%, 52%)', 'hsl(349, 70%, 56%)'],
-        'background-radial': ['hsl(214, 47%, 23%)', 'hsl(237, 49%, 15%)'],
-      }),
-      
+      },      
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.gradient-border-rock': {
+          background: 'linear-gradient(white, white) padding-box, linear-gradient(to right, hsl(349, 71%, 52%), hsl(349, 70%, 56%)) border-box',
+          borderRadius: '50rem',
+          border: '1rem solid transparent',
+        },
+        '.gradient-border-paper': {
+          background: 'linear-gradient(white, white) padding-box, linear-gradient(to right, hsl(230, 89%, 62%), hsl(230, 89%, 65%)) border-box',
+          borderRadius: '50rem',
+          border: '1rem solid transparent',
+        },
+        '.gradient-border-scissor': {
+          background: 'linear-gradient(white, white) padding-box, linear-gradient(to right, hsl(39, 89%, 49%), hsl(40, 84%, 53%)) border-box',
+          borderRadius: '50rem',
+          border: '1rem solid transparent',
+        },
+      });
+    },
+  ],
 }

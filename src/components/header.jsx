@@ -6,7 +6,7 @@ import logo from '../assets/images/logo.svg';
 
 const Header = () => {
   return (
-    <div className="wrapper max-w-[1400px] pt-[2.5rem]">
+    <>
       {/* this is the upper section */}
       <div className="max-w-[50%] mx-auto border-2 rounded-lg border-neutral-headerOutline flex justify-between px-[0.8rem] py-[1rem]">
         <div>
@@ -17,7 +17,7 @@ const Header = () => {
           <p className="uppercase text-neutral-darkText text-[2.5rem] font-bold leading-8">12</p>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
