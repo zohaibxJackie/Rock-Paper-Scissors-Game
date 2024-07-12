@@ -1,0 +1,23 @@
+Player chooses an option: Rock, Paper, or Scissors.
+Computer randomly chooses an option from an array of three items: Rock, Paper, Scissors.
+Compare the choices:
+If the player and computer choose the same option, it's a tie. Repeat the process.
+If the player chooses Rock and the computer chooses Scissors, the player wins.
+If the player chooses Rock and the computer chooses Paper, the computer wins.
+If the player chooses Paper and the computer chooses Rock, the player wins.
+If the player chooses Paper and the computer chooses Scissors, the computer wins.
+If the player chooses Scissors and the computer chooses Paper, the player wins.
+If the player chooses Scissors and the computer chooses Rock, the computer wins.
+
+1. Initialize options array: options = ["Rock", "Paper", "Scissors"]
+2. Player selects an option (player_choice)
+3. Computer randomly selects an option from the array (computer_choice)
+4. Compare player_choice and computer_choice:
+    a. If player_choice == computer_choice:
+        i. It's a tie. Repeat from step 2.
+    b. Else if (player_choice == "Rock" and computer_choice == "Scissors") or
+             (player_choice == "Paper" and computer_choice == "Rock") or
+             (player_choice == "Scissors" and computer_choice == "Paper"):
+        i. Player wins.
+    c. Else:
+        i. Computer wins.

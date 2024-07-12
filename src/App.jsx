@@ -24,7 +24,6 @@ function App() {
     navigate('/selection-results');
   }
 
-
   return (
     <div className="min-w-screen min-h-screen bg-gradient-to-b from-background-radialGradientStart to-background-radialGradientEnd font-barlowSemiCondensed">
       <div className="max-w-[1400px] pt-[2.5rem] mx-auto">
