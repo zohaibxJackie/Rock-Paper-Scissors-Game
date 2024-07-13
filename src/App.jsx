@@ -5,6 +5,7 @@ import PhaseTwo from "./components/Phase_2";
 import Rulesbtn from "./components/Rulesbtn";
 import Rules from "./components/Rules";
 import { useState } from "react";
+import {ScoreProvider} from "./components/scoreContext";
 
 function App() {
   const navigate = useNavigate();
@@ -29,10 +30,12 @@ function App() {
       <div className="max-w-[1400px] pt-[2.5rem] mx-auto">
         <Header />
         {isRulesVisible && <Rules onClick={handleClose} />}
-        <Routes>
-          <Route path="/" element={<PhaseOne onButtonClick={handleButtonClick} />} />
-          <Route path="/selection-results" element={<PhaseTwo userChoice={userChoice} />} />
-        </Routes>
+        <ScoreProvider>
+          <Routes>
+            <Route path="/" element={<PhaseOne onButtonClick={handleButtonClick} />} />
+            <Route path="/selection-results" element={<PhaseTwo userChoice={userChoice} />} />
+          </Routes>
+        </ScoreProvider>
         <Rulesbtn onClick={handleRulesClick} />
       </div>
     </div>
