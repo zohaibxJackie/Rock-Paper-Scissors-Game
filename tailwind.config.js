@@ -27,7 +27,11 @@ export default {
       },
       fontFamily: {
         barlowSemiCondensed: ['"Barlow Semi Condensed"', 'sans-serif'],
-      },      
+      },
+      screens: {
+        'sm': {'max' : '669px'},
+        'md': {'max' : '768px'}
+      }      
     },
   },
   plugins: [

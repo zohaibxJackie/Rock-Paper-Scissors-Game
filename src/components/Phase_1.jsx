@@ -11,7 +11,7 @@ const PhaseOne = ({ onButtonClick }) => {
           <img src={bg_triagle} alt="triangle-bg" />
           {/* btn-1 */}
           <div className='absolute top-[-15%] left-0 cursor-pointer'>
-            <div onClick={() => { onButtonClick("Paper") }} className='h-[8rem] w-[8rem] bg-white flex justify-center items-center gradient-border-paper'>
+            <div onClick={() => { onButtonClick("Paper") }} className='h-[8rem] w-[8rem] sm:h-[7rem] sm:w-[7rem] bg-white flex justify-center items-center gradient-border-paper sm:border-[0.6rem]'>
               <span>
                 <img src={icon_paper} alt="paper" className={'z-10 h-12'} />
               </span>
@@ -19,7 +19,7 @@ const PhaseOne = ({ onButtonClick }) => {
           </div>
           {/* btn-2 */}
           <div className='absolute top-[-15%] right-0 cursor-pointer'>
-            <div onClick={() => { onButtonClick("Scissor") }} className='h-[8rem] w-[8rem] flex justify-center items-center gradient-border-scissor'>
+            <div onClick={() => { onButtonClick("Scissor") }} className='h-[8rem] w-[8rem] sm:h-[7rem] sm:w-[7rem] flex justify-center items-center gradient-border-scissor sm:border-[0.6rem]'>
               <span>
                 <img src={icon_scissors} alt="scissors" className={'z-10 h-12'} />
               </span>
@@ -27,7 +27,7 @@ const PhaseOne = ({ onButtonClick }) => {
           </div>
           {/* btn-3 */}
           <div className='absolute bottom-0 left-[50%] translate-x-[-50%] cursor-pointer'>
-            <div onClick={() => { onButtonClick("Rock") }} className='h-[8rem] w-[8rem] flex justify-center items-center gradient-border-rock'>
+            <div onClick={() => { onButtonClick("Rock") }} className='h-[8rem] w-[8rem] sm:h-[7rem] sm:w-[7rem] flex justify-center items-center gradient-border-rock sm:border-[0.6rem]'>
               <span>
                 <img src={icon_rock} alt="rock" className={'z-10 h-12'} />
               </span>
