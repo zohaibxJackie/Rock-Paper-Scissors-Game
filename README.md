@@ -37,7 +37,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/zohaibxJackie/Rock-Paper-Scissors-Game)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://zohaibxjackie.github.io/Rock-Paper-Scissors-Game))
 
 ## My process
 
