@@ -8,7 +8,7 @@ const Rules = ({onClick}) => {
         <div className="bg-white p-6 rounded">
             <div className="flex justify-between items-center w-full min-w-max mb-4">
                 <p className="font-bold text-background-radialGradientEnd uppercase">Rules</p>
-                <Link to={'/'}>
+                <Link to={'#'}>
                     <img src={icon_close} onClick={onClick} alt="close" className="h-[0.9em] cursor-pointer" />
                 </Link>
             </div>
