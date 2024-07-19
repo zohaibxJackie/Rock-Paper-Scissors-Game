@@ -46,7 +46,7 @@ function App() {
             <Header />
             {isRulesVisible && <Rules onClick={handleClose} />}
             <Routes>
-              <Route path="/" element={<PhaseOne onButtonClick={handleButtonClick} />} />
+              <Route path="Rock-Paper-Scissors-Game/" element={<PhaseOne onButtonClick={handleButtonClick} />} />
               <Route path="/selection-results" element={<PhaseTwo userChoice={userChoice} />} />
             </Routes>
             <Rulesbtn onClick={handleRulesClick} />

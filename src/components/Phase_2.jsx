@@ -87,7 +87,7 @@ const PhaseTwo = ({ userChoice }) => {
                     {winner === 'win' && (
                         <div className='flex flex-col items-center mt-24'>
                             <p className='uppercase text-white font-bold text-[2rem]'>you win</p>
-                            <Link to={'/'}>
+                            <Link to={'/Rock-Paper-Scissors-Game'}>
                                 <button className='uppercase bg-white px-10 py-3 tracking-widest rounded text-xs font-bold hover:text-red-600'>play again</button>
                             </Link>
                         </div>
@@ -95,7 +95,7 @@ const PhaseTwo = ({ userChoice }) => {
                     {winner === 'draw' && (
                         <div className='flex flex-col items-center mt-24'>
                             <p className='uppercase text-white font-bold text-[2rem]'>draw</p>
-                            <Link to={'/'}>
+                            <Link to={'/Rock-Paper-Scissors-Game'}>
                                 <button className='uppercase bg-white px-10 py-3 tracking-widest rounded text-xs font-bold hover:text-red-600'>play again</button>
                             </Link>
                         </div>
@@ -103,7 +103,7 @@ const PhaseTwo = ({ userChoice }) => {
                     {winner === 'lost' && (
                         <div className='flex flex-col items-center mt-24'>
                             <p className='uppercase text-white font-bold text-[2rem]'>you lost</p>
-                            <Link to={'/'}>
+                            <Link to={'/Rock-Paper-Scissors-Game'}>
                                 <button className='uppercase bg-white px-10 py-3 tracking-widest rounded text-xs font-bold hover:text-red-600'>play again</button>
                             </Link>
                         </div>
