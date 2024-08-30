@@ -130,7 +130,7 @@ Although, I have learned a lot from this project but there are still many areas 
 
 - Website - [Muhammad Zohaib](https://muhammadzohaib4.wordpress.com/)
 - Frontend Mentor - [@zohaibxJackie](https://www.frontendmentor.io/profile/zohaibxJackie)
-- Linkedin - [@MuhammadZohaib](www.linkedin.com/in/muhammad-zohaib-a42923316)
+- Linkedin - [Muhammad Zohaib](www.linkedin.com/in/muhammad-zohaib-a42923316)
 - Instagram - [@muhammadzohaibofficial1](https://www.instagram.com/muhammadzohaibofficial1?igsh=bHQwN3FoMm5idXd2)
 
 ## Acknowledgments
